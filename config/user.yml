@@ -40,6 +40,10 @@ contact:
     includeMailTo: true
 
 projects :
+  - name: Portfoligo
+    description: Personal static portoflio website, written in Go, configured in Yaml
+    link: https://github.com/reavessm/portfoligo
+
   - name : MDS
     description : Homelab inspired container init system
     link : https://github.com/reavessm/MDS
