@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+  <!--    _  _   _ ___                                _             -->
+  <!--  _| || |_| |__ \                              | |            -->
+  <!-- |_  __  _| |__) |___  __ ___   _____  ___   __| | _____   __ -->
+  <!--  _| || |_| |_  // _ \/ _` \ \ / / _ \/ __| / _` |/ _ \ \ / / -->
+  <!-- |_  __  _|_| \ \  __/ (_| |\ V /  __/\__ \| (_| |  __/\ V /  -->
+  <!--   |_||_| (_)  \_\___|\__,_| \_/ \___||___(_)__,_|\___| \_/   -->
+
+  <!-- ascii art generated from https://textkool.com/en/ascii-art-generator?hl=default&vl=default&font=Big&text=%23!Reaves.dev -->
+  <!-- html/css modified from https://github.com/thomas154 -->
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{.Title}}</title>
+    <meta name="description" content="{{.Description}}">
+    <meta name="keywords" content="name">
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://fontlibrary.org/face/source-code-pro"/>
+    <link rel="stylesheet"
+          type="text/css"
+          href="/static/stylesheet.css"/>
+    <link rel="shortcut icon"
+          type="image/png"
+          href="/static/favicon.ico" />
+  </head>
+  <body>
+    <div id="head">{{.Name}}<span class="cursor"></span></div>
+    <div id="bar">
+      <div id="red">
+      </div>
+      <div id="yellow">
+      </div>
+      <div id="green">
+      </div>
+      <div id="headerText">Terminal</div>
+      <div id="bgImage">
+        <div id="screen">
+          <div id="content">
+
+            <div class="topic_header">NAME</div>
+            <div class="body_text">{{.Name}}</div>
+
+            <div class="topic_header">NICK(S)</div>
+            <div class="body_text">{{.NickName}}</div>
+
+            <div class="topic_header">DESCRIPTION</div>
+            <div class="body_text">
+              {{.Description}}
+            </div>
+
+            <div class="topic_header">MORE INFO</div>
+            <div class="body_text">
+              {{range .Socials}}
+                <p><a href="{{.Link}}" target="_blank">{{.Type}}</a> - {{.Username}} - {{.Description}}</p>
+              {{end}}
+            </div>
+
+            <div class="topic_header">CONTACT METHODS</div>
+            <div class="body_text">
+              {{range .Contacts}}
+                {{ if .IncludeMailTo }}
+                  <a href="mailto:{{.Ref}}">{{.Method}}</a> - {{.Ref}}
+                {{else}}
+                  {{.Method}} - {{.Ref}}
+                {{end}}
+              {{end}}
+            </div>
+
+
+            <div class="topic_header">PROJECTS</div>
+            <div class="body_text">
+              {{range .Projects}}
+                <p><a href="{{.Link}}" target="_blank">{{.Name}}</a> - {{.Description}}<p>
+              {{end}}
+            </div>
+
+            <div class="topic_header">CURRICULUM VITAE</div>
+            <div class="body_text">
+              {{range .Resumes}}
+                <a href="/static/{{.FileName}}" target="_blank">View/Download {{.Name}}</a><br>
+              {{end}}
+            </div>
+
+            <div class="topic_header">CERTIFICATIONS</div>
+            <div class="body_text">
+              {{range .Certifications}}
+                <a href="{{.Link}}" target="_blank">{{.Name}}</a><br>
+              {{end}}
+            </div>
+
+            {{if .Additional.Enabled}}
+
+            <div class="topic_header">SEE ALSO</div>
+            <div class="body_text">{{.Additional.Description}}</div>
+
+          {{end}}
+
+
+          <div class="topic_header">HISTORY</div>
+          <div class="body_text">
+            {{range .History}}
+              <b>[{{.Year}}]</b> {{.Description}}<br><br>
+            {{end}}
+          </div>
+
+          <div id="footer">
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

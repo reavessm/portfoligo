@@ -1,0 +1,99 @@
+# Welcome to Termplate
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ name }}, {{ email }}, and so on.
+# You can freely edit it here, if you don't know YAML, make sure to check
+# your YAML file using http://www.yamllint.com/
+
+name : Stephen Reaves
+nickname : reavessm, rapscallionreaves, rpscln
+title: Stephen Reaves Resume
+
+description: >
+  Technical Consultant, homelabber, and general nerd
+
+social:
+  - media : Github
+    username : reavessm
+    link : https://github.com/reavessm
+    description : Source code repository for various open source project contributions
+
+  - media : Gitlab
+    username : reavessm
+    link : https://gitlab.reaves.dev/reavessm
+    description : Self-hosted source code repository for open source projects, eventually mirrors Github
+
+  - media : LinkedIn
+    username : Stephen Reaves
+    link : https://linkedin.com/in/stephen-reaves-40813aa2
+    description : Where I can be found for recruiters
+
+  - media : Level1Techs
+    username : reavessm
+    link : https://forum.level1techs.com/u/reavessm/summary
+    description : General tech forum where I give and receive advice
+
+contact:
+  - method: Email
+    address: reaves735@gmail.com
+    includeMailTo: true
+
+projects :
+  - name : MDS
+    description : Homelab inspired container init system
+    link : https://github.com/reavessm/MDS
+
+  - name : ClosetPlusPlus
+    description : Demo closet app to learn abstraction and dynamic dependancies
+    link : https://github.com/reavessm/ClosetPlusPlus
+
+additional:
+  enabled: false
+  description: |
+    "More Stuff to Add!"
+
+resume:
+  - name: Resume
+    link: StephenReaves_Resume.pdf
+  
+  - name: CV
+    link: StephenReaves_CV.pdf
+
+  - name: Birkman Analysis
+    link: Birkman.pdf
+
+certs:
+  - name: "Exam MB-300: Microsoft Dynamics 365 - Core Finance and Operations"
+    link: "https://www.youracclaim.com/badges/c208ad1f-6e45-4d66-b046-9cfd657da014/public_url"
+
+  - name: "Exam 535: Architecting Microsoft Azure Solutions"
+    link: "https://www.youracclaim.com/badges/5c85190e-61bb-4c08-ad0e-028b02bfa96d/public_url"
+
+  - name: "Exam 778: Analyzing and Visualing Data with Power BI"
+    link: "https://www.youracclaim.com/badges/ad10e9eb-cafb-436e-8305-7825255f9fa8/public_url"
+
+  - name: "Exam 894: Development, Extensions and Deployment for D365FO"
+    link: "https://www.youracclaim.com/badges/4c0cf79d-d8e7-4e39-be19-fa55b0b87858/public_url"
+
+history: 
+  - description: Started working at Red Hat as a Software Engineer
+    year: 2021
+
+  - description: Started working at Blue Horseshoe Solutions, Inc. as a Technical Consultant
+    year: 2018
+
+  - description: Graduated from the University of South Carolina with major in Computer Science and a minor in business
+    year: 2018
+
+  - description: Started working in the Housing IT department at the University of South Carolina
+    year: 2017
+
+  - description: Changed majors to Computer Science, with a minor in Business 
+    year: 2016
+
+  - description: Started College at the University of South Carolina, double majoring in HR & GSCOM with a minor in computer science
+    year: 2014
+
+  - description: Graduated Highschool 
+    year: 2014
