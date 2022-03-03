@@ -10,10 +10,10 @@ import (
 	"fmt"
 	"io/ioutil"
 	"log"
-	"myStaticWebsite/config"
 	"net/http"
 	"text/template" // not html/template due to rendering of comments
 
+	"gitlab.reaves.dev/reavess/portfoligo.git/config"
 	"gopkg.in/yaml.v2"
 )
 
