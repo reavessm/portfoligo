@@ -6,7 +6,7 @@ ADD . /build
 
 WORKDIR /build
 
-RUN CGO_ENABLED=0 GOOS=linux go build -a -ldflags '-extldflags "-static"' -o main .
+RUN CGO_ENABLED=0 GOOS=linux go build -buildvcs=false -a -ldflags '-extldflags "-static"' -o main .
 
 FROM scratch
 
