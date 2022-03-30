@@ -21,8 +21,13 @@ social:
 
   - media : Gitlab
     username : reavessm
+    link : https://gitlab.com/reavessm
+    description : Source code repository for open source projects, eventually mirrors to Github
+
+  - media : Gitlab-local
+    username : reavessm
     link : https://gitlab.reaves.dev/reavessm
-    description : Self-hosted source code repository for open source projects, eventually mirrors Github
+    description : Self-hosted source code repository for open source projects, eventually mirrors to Gitlab
 
   - media : LinkedIn
     username : Stephen Reaves
@@ -40,6 +45,22 @@ contact:
     includeMailTo: true
 
 projects :
+  - name: rea
+    description: Reverse Engineering API code generator
+    link: https://gitlab.com/reavessm/rea
+
+  - name: OBI
+    description: OSB Installer.  Installs arbitrary docker containers to local hard drives
+    link: https://gitlab.com/reavessm/OBI
+
+  - name: OSB
+    description: Operating System Builder using Gentoo's Catalyst
+    link: https://gitlab.com/reavessm/OSB
+
+  - name: goblog
+    description: Simple markdown to blog converter with a simple name
+    link: https://gitlab.com/reavessm/goblog
+
   - name: Portfoligo
     description: Personal static portoflio website, written in Go, configured in Yaml
     link: https://github.com/reavessm/portfoligo
@@ -60,7 +81,7 @@ additional:
 resume:
   - name: Resume
     link: StephenReaves_Resume.pdf
-  
+
   - name: CV
     link: StephenReaves_CV.pdf
 
