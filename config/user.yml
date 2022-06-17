@@ -11,7 +11,7 @@ nickname : reavessm, rapscallionreaves, rpscln
 title: Stephen Reaves Resume
 
 description: >
-  Technical Consultant, homelabber, and general nerd
+  Software Engineer, homelabber, and general nerd
 
 social:
   - media : Github
@@ -45,6 +45,10 @@ contact:
     includeMailTo: true
 
 projects :
+  - name: ijq
+    description: Interactive Json Query builder
+    link: https://gitlab.com/reavessm/ijq
+
   - name: rea
     description: Reverse Engineering API code generator
     link: https://gitlab.com/reavessm/rea
@@ -64,14 +68,14 @@ projects :
   - name: Portfoligo
     description: Personal static portoflio website, written in Go, configured in Yaml
     link: https://github.com/reavessm/portfoligo
-
-  - name : MDS
-    description : Homelab inspired container init system
-    link : https://github.com/reavessm/MDS
-
-  - name : ClosetPlusPlus
-    description : Demo closet app to learn abstraction and dynamic dependancies
-    link : https://github.com/reavessm/ClosetPlusPlus
+#
+#  - name : MDS
+#    description : Homelab inspired container init system
+#    link : https://github.com/reavessm/MDS
+#
+#  - name : ClosetPlusPlus
+#    description : Demo closet app to learn abstraction and dynamic dependancies
+#    link : https://github.com/reavessm/ClosetPlusPlus
 
 additional:
   enabled: false
